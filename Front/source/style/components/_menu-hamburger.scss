@@ -1,0 +1,31 @@
+.menu-hamburger {
+  left: -1500px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: $menu-background;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-right: 20px;
+  font-family: $font-template;
+  text-transform: uppercase;
+  color: $white;
+  width: 70%;
+  font-weight: lighter; 
+  &__menu {
+    list-style-type: none;
+    font-weight: lighter; 
+    margin-left: -40px;
+    text-align: center;
+  }
+  &__list {
+    font-weight: lighter;   
+    border-bottom: solid $white 0.5px;
+    width: 100%;
+  }
+  &__link {
+    color: $white;
+    text-decoration: none;
+  }
+}
