@@ -1,0 +1,42 @@
+.modal {
+  opacity: 0;
+  display: none;
+  &-background {
+    display: none;
+    background-color: $black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    opacity: 0;
+    top: 0;
+  }
+  &-sm {
+    background-color: $white;
+    width: 30%;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &-md {
+    @extend .modal-sm;
+    width: 50%;
+  }
+  &-title {
+    font-family: $font-template;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $title-color;
+    border-left: solid 5px $search-hover;
+    padding-left: 10px;
+    &-header {
+      margin-top: 0;
+    }
+  }
+  &-body {
+    margin-top: 20px;
+  }
+}
